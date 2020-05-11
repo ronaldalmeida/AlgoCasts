@@ -4,6 +4,10 @@ test('palindrome function is defined', () => {
   expect(typeof palindrome).toEqual('function');
 });
 
+test('"a" is a palindrome', () => {
+  expect(palindrome('a')).toBeTruthy();
+});
+
 test('"aba" is a palindrome', () => {
   expect(palindrome('aba')).toBeTruthy();
 });
