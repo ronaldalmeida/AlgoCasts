@@ -12,6 +12,17 @@
 //   4
 //   buzz
 
-function fizzBuzz(n) {}
+function fizzBuzz(n) 
+{
+    for (let index = 1; index <= n; index++) {
+        let result = '';
+
+        if(index % 3 ==0) result = 'fizz';
+        if(index % 5 == 0) result += 'buzz';
+        if(result == '') result = index;
+        
+        console.log(result);
+    }
+}
 
 module.exports = fizzBuzz;
